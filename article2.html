@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html class="article-background">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Money and Self-Worth: What Your Finances Reveal About You - Prosperitas</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="slideshow"></div>
+    <header>
+        <h1>Money and Self-Worth: What Your Finances Reveal About You</h1>
+    </header>
+    <main>
+    <section>
+        <article>
+            <h2>How Your Financial Behaviour Reflects Your Self-Value</h2>
+            <p>
+                This article delves into the fascinating connection between money and self-worth. 
+                We explore how our financial behaviour often mirrors our sense of self-value. Readers will gain insights into how overspending, 
+                undersaving, or neglecting financial responsibilities can be indicative of deeper self-esteem issues. 
+                We provide actionable strategies for boosting self-worth and improving financial well-being. 
+                By recognizing this link, readers can take steps to align their financial habits with their self-value.
+            </p>
+        </article>
+    </section>
+    </main>
+    <script>
+        const imageSources = [
+            'assets/images/Slide1.png',
+            'assets/images/Slide2.png',
+            'assets/images/Slide3.png'
+            // Add as many image sources as you like
+        ];
+    
+        let current = 0;
+        const slideshow = document.getElementById('slideshow');
+        const imgElement = document.createElement('img');
+        imgElement.style.width = '100%';
+        imgElement.style.height = '100%';
+        slideshow.appendChild(imgElement);
+    
+        function changeBackground() {
+            current = (current + 1) % imageSources.length;
+            imgElement.src = imageSources[current];
+        }
+    
+        // Load the first image initially
+        imgElement.src = imageSources[current];
+    
+        setInterval(changeBackground, 10000); // Change image every 10000 milliseconds (10 seconds)
+    </script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Prosperitas - Financial Wisdom</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="slideshow"></div>
+    <header>
+        <h1>Prosperitas</h1>
+        <nav>
+            <ul>
+                <li><a href="#money-mindset">Money Mindset</a></li>
+                <li><a href="#financial-fitness">Financial Fitness</a></li>
+                <li><a href="#debt-demolition">Debt Demolition</a></li>
+                <li><a href="#budgeting">Budgeting Bliss</a></li>
+                <li><a href="#investments">Investor's Playbook</a></li>
+                <li><a href="#corporate-finance">Corporate Finance</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="money-mindset">
+            <h2>Money Mindset Makeover</h2>
+            <p> Explore the psychology of wealth and learn how to cultivate a positive money mindset for success.</p>
+            <p><i>"Money is more open-minded than language, state laws, cultural codes, religious beliefs and social habits. 
+                Money is the only trust system created by humans that can bridge almost any cultural gap, 
+                and that does not discriminate on the basis of religion, gender, race, age, or sexual orientation." 
+                - Yuval Noah Harari</i></p>
+            
+            <div class="section">
+                <a href="article1.html">
+                    <div class="article1-container">
+                        <div class="article-text">
+                            <h3>The Psychology of Money: Unravelling Its Role in Our Lives</h3>
+                            <p>Exploring the Deep Connection Between Money and Human Psychology</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="article2.html">
+                    <div class="article2-container">
+                        <div class="article-text">
+                            <h3>Money and Self-Worth: What Your Finances Reveal About You</h3>
+                            <p>How Your Financial Behaviour Reflects Your Self-Value</p>
+                        </div>
+                    </div>
+                </a>    
+                <a href="article3.html">
+                    <div class="article3-container">
+                        <div class="article-text">
+                            <h3>Mastering Money: Strategies to Increase Your Financial Abundance</h3>
+                            <p>Practical Steps to Attract More Wealth into Your Life</p>
+                        </div>
+                    </div>
+                </a>   
+            </div>
+            <!-- Articles and content related to Wealth Building -->
+        </section>
+        <section id="financial-fitness">
+            <h2>Financial Fitness Bootcamp</h2>
+            <p>Get in shape financially with actionable tips and exercises to improve your financial well-being.</p>
+            <!-- Articles and content related to Business Creation -->
+        </section>
+        <section id="debt-demolition">
+            <h2>Debt-Free Diaries</h2>
+            <p>Follow real-life stories of individuals who paid off their debts and achieved financial freedom.</p>
+            <!-- Articles and content related to Investments -->
+        </section>
+        <section id="budgeting">
+            <h2>Budgeting Bliss</h2>
+            <p>Learn the art of budgeting and tracking expenses to achieve financial goals without sacrificing fun.</p>
+            <!-- Articles and content related to Emergency Fund -->
+        </section>
+        <section id="investments">
+            <h2>Investor's Playbook</h2>
+            <p>Discover strategies for smart investing, from stocks and bonds to cryptocurrencies and real estate.</p>
+            <!-- Articles and content related to Debt Management -->
+        </section>
+        <section id="corporate-finance">
+            <h2>Side Hustle Spotlight</h2>
+            <p>Explore innovative side hustle ideas and success stories to boost your income.</p>
+            <!-- Articles and content related to Corporate Finance -->
+        </section>
+        <section id="corporate-finance">
+            <h2>Corporate Compass: Navigating Business Finances</h2>
+            <!-- Articles and content related to Corporate Finance -->
+        </section>
+    </main>
+    <footer>
+        <p>Contact us at [email@example.com]</p>
+        <!-- Add social media links and other relevant information here -->
+    </footer>
+   
+ <!-- Slideshow background-->
+ <!-- Slideshow background-->
+<script>
+    const imageSources = [
+        'assets/images/Slide1.png',
+        'assets/images/Slide2.png',
+        'assets/images/Slide3.png'
+        // Add as many image sources as you like
+    ];
+
+    let current = 0;
+    const slideshow = document.getElementById('slideshow');
+    const imgElement = document.createElement('img');
+    imgElement.style.width = '100%';
+    imgElement.style.height = '100%';
+    slideshow.appendChild(imgElement);
+
+    function changeBackground() {
+        current = (current + 1) % imageSources.length;
+        imgElement.src = imageSources[current];
+    }
+
+    // Load the first image initially
+    imgElement.src = imageSources[current];
+
+    setInterval(changeBackground, 10000); // Change image every 10000 milliseconds (10 seconds)
+</script>
+
+<script>
+    window.addEventListener('scroll', function() {
+    const header = document.querySelector('header');
+    if (window.scrollY > 0) {
+        header.classList.add('fixed');
+    } else {
+        header.classList.remove('fixed');
+    }
+});
+
+</script>
+
+</body>
+</html>

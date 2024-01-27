@@ -1,0 +1,168 @@
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.6); /* Use rgba for transparency */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0;
+    width: 100%;
+    top: 0;
+    z-index: 1; /* Ensure it's above other content */
+    transition: background-color 0.3s; /* Add a smooth transition effect */
+}
+
+a {
+    text-decoration: none; /* Remove the default underline */
+    color: inherit; /* Use the default text color */
+  }
+
+/* Style the header links */
+nav ul {
+    list-style: none;
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white; /* Text color for links */
+    transition: color 0.3s; /* Add a smooth transition effect */
+}
+
+/* Change link color on hover */
+nav ul li a:hover {
+    color: #3498db; /* Change to a different color on hover */
+}
+
+/* Add a subtle box shadow to sections */
+section {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+}
+
+/* Style the footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+    clear: both;
+}
+
+/* Add a hover effect to footer links */
+footer a:hover {
+    color: rgb(131, 122, 3);
+}
+
+#slideshow {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.8;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Responsive CSS for Mobile Devices */
+@media screen and (max-width: 768px) {
+    /* Adjust header and navigation styles */
+    header {
+        padding: 10px 0;
+        position: -webkit-sticky; /* For Safari */
+        position: sticky;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    /* Adjust section and footer styles */
+    section {
+        padding: 20px;
+        margin: 30px 0 20px; /* Added margin to create space between sections */
+    }
+
+     /* Add margin to sections when header is fixed */
+     header.fixed + main section {
+        margin-top: 60px; /* Adjust this value based on your header height */
+     }
+    footer {
+        padding: 10px 0;
+    }
+}
+
+/* Style the article container */
+
+.section {
+    display: flex; /* Use flexbox to arrange article containers */
+    justify-content: space-between; /* Add space between articles */
+  }
+
+  .article1-container, .article2-container, .article3-container {
+    padding: 10px;
+    margin: 10px;
+    display: flex; /* Use flexbox to arrange text content */
+    flex-direction: column; /* Stack content vertically within each container */
+    align-items: center;
+    background-size: cover; /* Cover the entire container with the image */
+    color: black; /* Text color */
+    text-align: center;
+}
+
+  .article1-container {
+    background-image: url('assets/images/Slide3.png'); /* Set the background image */;
+}
+  .article2-container {
+    background-image: url('assets/images/Slide4.png'); /* Set the background image */
+  }
+  
+  .article3-container {
+    background-image: url('assets/images/Slide5.png');    /* Set the background image */
+  }
+
+  /* Style the article text */
+  .article-text {
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background for text */
+    padding: 10px; /* Add padding for spacing */
+    flex: 1; /* Allow text to expand and fill remaining space */
+    margin-top: 50%;
+    text-decoration: none;
+  }
+  

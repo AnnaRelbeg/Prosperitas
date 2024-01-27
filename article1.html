@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html class="article-background">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Understanding the Psychology of Money - Prosperitas</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="slideshow"></div>
+    <header>
+        <h1>Understanding the Psychology of Money</h1>
+    </header>
+    <main>
+    <section>
+        <article>
+            <h2>Exploring the Deep Connection Between Money and Human Psychology</h2>
+            <p>
+                Money plays a crucial role in our lives, affecting our decisions, emotions, and well-being.
+                In this article, we explore the psychology of money and how it impacts our financial choices.
+                Discover the deep-rooted beliefs and biases that influence your financial behavior.
+            </p>
+            <p>
+                Learn how to develop a healthy money mindset, make informed financial decisions,
+                and achieve your financial goals.
+            </p>
+        </article>
+    </section>
+    </main>
+    <script>
+        const imageSources = [
+            'assets/images/Slide1.png',
+            'assets/images/Slide2.png',
+            'assets/images/Slide3.png'
+            // Add as many image sources as you like
+        ];
+    
+        let current = 0;
+        const slideshow = document.getElementById('slideshow');
+        const imgElement = document.createElement('img');
+        imgElement.style.width = '100%';
+        imgElement.style.height = '100%';
+        slideshow.appendChild(imgElement);
+    
+        function changeBackground() {
+            current = (current + 1) % imageSources.length;
+            imgElement.src = imageSources[current];
+        }
+    
+        // Load the first image initially
+        imgElement.src = imageSources[current];
+    
+        setInterval(changeBackground, 10000); // Change image every 10000 milliseconds (10 seconds)
+    </script>
+</body>
+</html>
